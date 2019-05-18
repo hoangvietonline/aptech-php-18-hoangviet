@@ -1,38 +1,47 @@
-.div-mot{
+.div-mot {
     height: 200px;
     background-color: darkgoldenrod;
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
-    
+    align-items: center;
+
+
+
 }
-.div-c{
+
+.div-c {
     border-style: solid;
     border-color: aliceblue;
     border-width: medium;
-    height: 50%;
-    width: 60%;
+    height: 80%;
+    width: 68%;
     background-color: darkblue;
-    margin-top: 50px;
+    /* margin-top: 50px;
     margin-bottom: 50px;
-    margin-left: 75px;
-    
+    margin-left: 75px; */
+    margin-left: 10px;
+
 }
-.div-t{
+
+.div-t {
     border-style: solid;
     border-color: aliceblue;
     border-width: medium;
-    height: 50%;
+    height: 80%;
     width: 25%;
     background-color: lightseagreen;
-    margin-top: 50px;
+    /* margin-top: 50px;
     margin-bottom: 50px;
-    margin-right: 75px;
+    margin-right: 75px; */
+    margin-right: 10px;
 }
-.chu-nam-giua{
-   text-align: center;
+
+.chu-nam-giua {
+    text-align: center;
 }
-.div-hai{
+
+.div-hai {
     background-color: black;
     widows: 40%;
     height: 50%;
@@ -40,18 +49,19 @@
     size: 50px;
 
 }
-.div-ba{
-    
+
+.div-ba {
+
     height: 400px;
     background-color: dimgray;
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
 }
-.div-ba-1{
-    
-}
-.div-ba-1-1{
+
+.div-ba-1 {}
+
+.div-ba-1-1 {
     border-style: solid;
     border-color: aliceblue;
     border-width: medium;
@@ -62,7 +72,8 @@
     margin-bottom: 75px;
     margin-left: 75px;
 }
-.div-ba-1-2{
+
+.div-ba-1-2 {
     border-style: solid;
     border-color: aliceblue;
     border-width: medium;
@@ -73,38 +84,42 @@
     margin-bottom: 50px;
     margin-left: 75px;
 }
-.div-ba-2{
+
+.div-ba-2 {
     border-style: solid;
     border-color: aliceblue;
     border-width: medium;
     height: 250px;
-    width:350px;
+    width: 350px;
     background-color: blue;
     margin-top: 45px;
     margin-bottom: 50px;
     margin-left: 70px;
-    
+
 }
-.div-ba-3{
+
+.div-ba-3 {
     border-style: solid;
     border-color: aliceblue;
     border-width: medium;
     height: 250px;
-    width:350px;
+    width: 350px;
     background-color: blue;
     margin-top: 45px;
     margin-bottom: 50px;
     margin-right: 75px;
-    
+
 }
-.div-bon{
+
+.div-bon {
     height: 75px;
     background-color: darkblue;
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
 }
-.div-bonc{
+
+.div-bonc {
     border-style: solid;
     border-color: aliceblue;
     border-width: medium;
@@ -114,5 +129,5 @@
     margin-top: 30px;
     margin-bottom: 75px;
     margin-left: 50px;
-    margin-right:50px;
+    margin-right: 50px;
 }

@@ -1,0 +1,22 @@
+.Frist-Container {
+    background-color: lightcoral;
+    display: block;
+
+    &__row {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        &__div-aqua {
+            background-color: aqua;
+            height: 100px;
+            width: 50%;
+        }
+
+        &__div-brown {
+            background-color: brown;
+            height: 100px;
+            width: 50%;
+        }
+    }
+}

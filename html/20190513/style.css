@@ -1,0 +1,28 @@
+.Frist-Container {
+  background-color: lightcoral;
+  display: block;
+}
+
+.Frist-Container__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Frist-Container__row__div-aqua {
+  background-color: aqua;
+  height: 100px;
+  width: 50%;
+}
+
+.Frist-Container__row__div-brown {
+  background-color: brown;
+  height: 100px;
+  width: 50%;
+}
+/*# sourceMappingURL=style.css.map */
