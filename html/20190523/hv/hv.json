@@ -1,0 +1,6 @@
+{
+    "name": "Hoang Viet",
+    "Age": 23,
+    "queQuan": "QuangNam",
+    "pet": ["dog", "cat", "pig"]
+}
