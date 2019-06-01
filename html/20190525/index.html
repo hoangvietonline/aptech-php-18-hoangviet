@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <button>Lấy dữ liệu</button>
+    <Script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $.get("https://namcoi.com/projects/users-crud-laravel/public/api/users", function (data,
+                    status) {
+                    console.log(data);
+
+                    function Create(nameOfElement) {
+                        return document.createElement(nameOfElement);
+                    }
+                    //tạo các element
+                    var table = Create("table");
+                    var thead = Create("thead");
+                    var tbody = Create("tbody");
+
+                    var styleAttribute1 = document.createAttribute("style");
+                    styleAttribute1.value = "color: red";
+                    thead.setAttributeNode(styleAttribute1);
+
+                    //them thead và tbody và thẻ table
+                    table.appendChild(thead);
+                    table.appendChild(tbody);
+
+                    var trow = Create("tr");
+                    thead.appendChild(trow);
+                    // tạo một mảng tạm thời
+                    var array1 = ["Id", "Name", "Email"];
+                    //lấy giá trị trang mảng cho vào th trong thẻ tr
+                    for (var i = 0; i < array1.length; i++) {
+                        var th = Create("th");
+                        var text = document.createTextNode(array1[i]);
+                        th.appendChild(text);
+                        trow.appendChild(th);
+                    }
+                    for (var i = 0; i < data.users.length; i++) {
+                        var trowBody = Create("tr");
+                        tbody.appendChild(trowBody);
+                        var array = [data.users[i].id, data.users[i].name, data.users[i].email];
+                        for (var j = 0; j < array.length; j++) {
+                            var td = Create("td");
+                            var text = document.createTextNode(array[j]);
+                            td.appendChild(text);
+                            trowBody.appendChild(td);
+                        }
+                    }
+                    document.body.appendChild(table);
+                });
+            });
+        });
+    </Script>
+</body>
+
+</html>

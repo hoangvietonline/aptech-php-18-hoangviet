@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <style>
+      #hinh1,
+      #hinh2,
+      #hinh3 {
+        height: 200px;
+        width: 100%;
+      }
+      #hinh1 {
+        background-image: cross-fade("hinh-1.jpg");
+        /* background-size: cover;
+        background-position: center; */
+      }
+      #hinh2 {
+        background-image: url("hinh-2.jpg");
+      }
+      #hinh3 {
+        background-image: url("hinh-3.jpg");
+      }
+    </style>
+  </head>
+
+  <body>
+    <img alt="hinh ảnh" id="hinh1" />
+    <img alt="hinh ảnh" id="hinh2" />
+    <img alt="hinh ảnh" id="hinh3" />
+    <button>click me</button>
+    <script>
+      $("#hinh2").hide();
+      $("#hinh3").hide();
+      $(document).ready(function() {
+        $("#hinh1").click(function() {
+          $("#hinh1").hide();
+          $("#hinh2").show();
+        });
+        $("#hinh2").click(function() {
+          $("#hinh2").hide();
+          $("#hinh3").show();
+        });
+        $("#hinh3").click(function() {
+          $("#hinh3").hide();
+          $("#hinh1").show();
+        });
+      });
+    </script>
+  </body>
+</html>

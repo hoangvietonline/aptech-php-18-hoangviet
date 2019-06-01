@@ -2,210 +2,212 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Checkout form</title>
-    <link rel="stylesheet" href="bootstrap.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Checkout form</title>
+  <link rel="stylesheet" href="bootstrap.css" />
 </head>
 
 <body class="bg-light">
-    <div class="container text-center">
-        <div class="row">
-            <div class="col-12 d-flex flex-column justify-content-center align-items-center ">
-                <img class="m-5" src="https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg" width="75px"
-                    height="75px" />
-                <h1 class="mb-4">Please sign in</h1>
-                <p class="lead mb-5">
-                    Below is an example form built entirely with Bootstrap’s form
-                    controls. Each required form group has a validation state that can
-                    be triggered by attempting to submit the form without completing it.
-                </p>
-            </div>
-        </div>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-sm-12 col-md-8  offset-md-2 d-flex flex-column justify-content-center align-items-center ">
+        <img class="m-5" src="https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg" width="75px"
+          height="75px" />
+        <h1 class="mb-4">Please sign in</h1>
+        <p class="lead mb-5">
+          Below is an example form built entirely with Bootstrap’s form
+          controls. Each required form group has a validation state that can
+          be triggered by attempting to submit the form without completing it.
+        </p>
+      </div>
     </div>
-    <div class="container mb-5">
-        <div class="row">
-            <div class="col-8">
-                <h4 class="text-body mt-3"><b>Billing address</b></h4>
-                <form action="">
-                    <div class="form-group d-flex justify-content-between align-items-center my-3">
-                        <div style="width: 48%;">
-                            <label for="usr">First name</label>
-                            <input type="text" class="form-control" id="usr" name="username" />
-                        </div>
-                        <div style="width: 48%;">
-                            <label for="usr">Last name</label>
-                            <input type="text" class="form-control" id="usr" name="username" />
-                        </div>
-                    </div>
-                    <div class="form-group mb-3">
-                        <label for="usr">Username</label>
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="basic-addon1">@</span>
-                            </div>
-                            <input type="text" class="form-control" placeholder="Username" aria-label="Username"
-                                aria-describedby="basic-addon1" />
-                        </div>
-                    </div>
-                    <div class="form-group mb-3">
-                        <label for="Email">Email
-                            <span class="text-muted">(Optional)</span>
-                        </label>
+  </div>
+  <div class="container mb-5">
+    <div class="row">
+      <div class="col-md-8">
+        <h4 class="text-body mt-3"><b>Billing address</b></h4>
+        <form action="">
+          <div class="form-group d-flex justify-content-between align-items-center my-3">
+            <div style="width: 48%;">
+              <label for="usr">First name</label>
+              <input type="text" class="form-control" id="usr" name="username" />
+            </div>
+            <div style="width: 48%;">
+              <label for="usr">Last name</label>
+              <input type="text" class="form-control" id="usr" name="username" />
+            </div>
+          </div>
+          <div class="form-group mb-3">
+            <label for="usr">Username</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">@</span>
+              </div>
+              <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                aria-describedby="basic-addon1" />
+            </div>
+          </div>
+          <div class="form-group mb-3">
+            <label for="Email">Email
+              <span class="text-muted">(Optional)</span>
+            </label>
 
-                        <input type="text" class="form-control" placeholder="you@example.com" />
-                    </div>
-                    <div class="form-group mb-3">
-                        <label for="Address">Address </label>
+            <input type="text" class="form-control" placeholder="you@example.com" />
+          </div>
+          <div class="form-group mb-3">
+            <label for="Address">Address </label>
 
-                        <input type="text" class="form-control" placeholder="1234 Main St" />
-                    </div>
-                    <div class="form-group mb-3">
-                        <label for="Address 2">Address 2
-                            <span class="text-muted">(Optional)</span>
-                        </label>
-                        <input type="text" class="form-control" placeholder="1234 Main St" />
-                    </div>
+            <input type="text" class="form-control" placeholder="1234 Main St" />
+          </div>
+          <div class="form-group mb-3">
+            <label for="Address 2">Address 2
+              <span class="text-muted">(Optional)</span>
+            </label>
+            <input type="text" class="form-control" placeholder="1234 Main St" />
+          </div>
 
-                    <!-- tạo phần select (chose) dùng d-flex không dùng row:tại sao? 
+          <!-- tạo phần select (chose) dùng d-flex không dùng row:tại sao? 
             tại sao có thêm align-items-center zip lại lệch xuống dưới, chỗ này khoảng cách giữa các element không cách đều ra được-->
-                    <div class=" form-group mb-3 d-flex justify-content-space-between">
-                        <div style="width: 40%;">
-                            <label for="Country">Country</label>
-                            <div class="input-group mb-3">
-                                <select class="custom-select" id="inputGroupSelect02">
-                                    <option selected>Choose...</option>
-                                    <option value="1">United states</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div style="width: 25%;">
-                            <label for="State">State</label>
-                            <div class="input-group mb-3">
-                                <select class="custom-select" id="inputGroupSelect02">
-                                    <option selected>Choose...</option>
-                                    <option value="1">California</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div style="width: 20%;">
-                            <label for="Zip">Zip</label>
-                            <input class="form-control" type="text" />
-                        </div>
-
-                    </div>
-                    <hr class="my-4">
-                    <div class="form-check mb-3">
-                        <input type="checkbox" class="form-check-input" />Shipping address
-                        is the same as my billing address
-                        <br />
-                        <input type="checkbox" class="form-check-input" />Save this
-                        information for next time
-                        <br />
-
-                    </div>
-                    <hr class="my-4">
-                    <div class="form-group mb-3">
-                        <label for="Payment">
-                            <h4><b>Payment</b></h4>
-                        </label>
-                        <div class="form-group">
-                            <input type="radio" value="Credit card" name="hoangviet" checked /> Credit card<br />
-                            <input type="radio" value="Debit card" name="hoangviet" /> Debit card<br />
-                            <input type="radio" value="PayPal" name="hoangviet" /> PayPal
-                        </div>
-                    </div>
-                    <div class="form-group d-flex justify-content-between  my-3">
-                        <div style="width: 48%;">
-                            <label for="card">Name on card</label>
-                            <input type="text" class="form-control" id="card" name="cardname" />
-                            <small class="text-muted">Full name as displayed on card</small>
-                        </div>
-                        <div style="width: 48%;">
-                            <label for="card">Credit card number</label>
-                            <input type="text" class="form-control" id="card" name="cardname" />
-                        </div>
-                    </div>
-                    <div class="form-group d-flex justify-content- right my-3">
-                        <div style="width: 25%;" class="mr-5">
-                            <label for="Expiration">Expiration</label>
-                            <input type="text" class="form-control" id="Expiration" name="ename" />
-                        </div>
-                        <div style="width:25%;">
-                            <label for="CVV">CVV</label>
-                            <input type="text" class="form-control" id="CVV" name="cname" />
-                        </div>
-                    </div>
-                    <hr class="my-5">
-                    <button type="button" class="btn btn-primary form-control">Continue to checkout</button>
-                </form>
+          <div class=" form-group mb-3 mx-2 d-flex justify-content-between">
+            <div style="width: 40%;">
+              <label for="Country">Country</label>
+              <div class="input-group mb-3">
+                <select class="custom-select" id="inputGroupSelect02">
+                  <option selected>Choose...</option>
+                  <option value="1">United states</option>
+                </select>
+              </div>
             </div>
-            <div class="col-4">
-                <h4 class="d-flex justify-content-between align-items-center">
-                    <span class="text-muted">Your cart</span>
-                    <p class="bg-dark ml-5 text-white text-center mt-3" style="border-radius: 40%;width: 30px  ">
-                        <b>3</b>
-                    </p>
-                </h4>
-                <ul class="list-group">
-                    <li class="list-group-item d-flex justify-content-between ">
-                        <div>
-                            <h6 class="my-0">Product name</h6>
-                            <small class="text-muted">Brief description</small>
-                        </div>
-                        <span class="text-muted">$12</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between ">
-                        <div>
-                            <h6 class="my-0">Second product</h6>
-                            <small class="text-muted">Brief description</small>
-                        </div>
-                        <span class="text-muted">$8</span>
-                    </li>
-
-                    <li class="list-group-item d-flex justify-content-between ">
-                        <div>
-                            <h6 class="my-0">Third item</h6>
-                            <small class="text-muted">Brief description</small>
-                        </div>
-                        <span class="text-muted">$5</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between text-success ">
-                        <div>
-                            <h6 class="my-0">Promo code</h6>
-                            <small>EXAMPLECODE</small>
-                        </div>
-                        <span class="text-muted">-$5</span>
-                    </li>
-
-                    <li class="list-group-item d-flex justify-content-between ">
-                        <div>
-                            <h6 class="my-0">Total (USD)</h6>
-                        </div>
-                        <span class="text-body"><b>$20</b></span>
-                    </li>
-                </ul>
-                <form class="card p-2">
-                    <div class="input-group ">
-                        <input type="text" class="form-control" placeholder="Promo code" />
-                        <div class="input-group-append">
-                            <button class="btn btn-dark" type="button">Redeem</button>
-                        </div>
-                    </div>
-                </form>
+            <div style="width: 25%;">
+              <label for="State">State</label>
+              <div class="input-group mb-3">
+                <select class="custom-select" id="inputGroupSelect02">
+                  <option selected>Choose...</option>
+                  <option value="1">California</option>
+                </select>
+              </div>
             </div>
-        </div>
-    </div>
+            <div style="width: 20%;">
+              <label for="Zip">Zip</label>
+              <input class="form-control" type="text" />
+            </div>
+          </div>
+          <hr class="my-4" />
+          <div class="form-check mb-3">
+            <input type="checkbox" class="form-check-input" />Shipping address
+            is the same as my billing address
+            <br />
+            <input type="checkbox" class="form-check-input" />Save this
+            information for next time
+            <br />
+          </div>
+          <hr class="my-4" />
+          <div class="form-group mb-3">
+            <label for="Payment">
+              <h4><b>Payment</b></h4>
+            </label>
+            <div class="form-group">
+              <input type="radio" value="Credit card" name="hoangviet" checked />
+              Credit card<br />
+              <input type="radio" value="Debit card" name="hoangviet" /> Debit
+              card<br />
+              <input type="radio" value="PayPal" name="hoangviet" /> PayPal
+            </div>
+          </div>
+          <div class="form-group d-flex justify-content-between  my-3">
+            <div style="width: 48%;">
+              <label for="card">Name on card</label>
+              <input type="text" class="form-control" id="card" name="cardname" />
+              <small class="text-muted">Full name as displayed on card</small>
+            </div>
+            <div style="width: 48%;">
+              <label for="card">Credit card number</label>
+              <input type="text" class="form-control" id="card" name="cardname" />
+            </div>
+          </div>
+          <div class="form-group d-flex justify-content- right my-3">
+            <div style="width: 25%;" class="mr-5">
+              <label for="Expiration">Expiration</label>
+              <input type="text" class="form-control" id="Expiration" name="ename" />
+            </div>
+            <div style="width:25%;">
+              <label for="CVV">CVV</label>
+              <input type="text" class="form-control" id="CVV" name="cname" />
+            </div>
+          </div>
+          <hr class="my-5" />
+          <button type="button" class="btn btn-primary form-control">
+            Continue to checkout
+          </button>
+        </form>
+      </div>
+      <div class="col-md-4">
+        <h4 class="d-flex justify-content-between align-items-center">
+          <span class="text-muted">Your cart</span>
+          <p class="bg-dark ml-5 text-white text-center mt-3" style="border-radius: 40%;width: 30px  ">
+            <b>3</b>
+          </p>
+        </h4>
+        <ul class="list-group">
+          <li class="list-group-item d-flex justify-content-between ">
+            <div>
+              <h6 class="my-0">Product name</h6>
+              <small class="text-muted">Brief description</small>
+            </div>
+            <span class="text-muted">$12</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between ">
+            <div>
+              <h6 class="my-0">Second product</h6>
+              <small class="text-muted">Brief description</small>
+            </div>
+            <span class="text-muted">$8</span>
+          </li>
 
-    <footer class="text-muted text-center my-5">
-        <p>© 2017-2019 Company Name</p>
-        <ul class="list-inline">
-            <li class="list-inline-item"><a href="#">Privacy</a></li>
-            <li class="list-inline-item"><a href="#">Terms</a></li>
-            <li class="list-inline-item"><a href="#">Support</a></li>
+          <li class="list-group-item d-flex justify-content-between ">
+            <div>
+              <h6 class="my-0">Third item</h6>
+              <small class="text-muted">Brief description</small>
+            </div>
+            <span class="text-muted">$5</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between text-success ">
+            <div>
+              <h6 class="my-0">Promo code</h6>
+              <small>EXAMPLECODE</small>
+            </div>
+            <span class="text-muted">-$5</span>
+          </li>
+
+          <li class="list-group-item d-flex justify-content-between ">
+            <div>
+              <h6 class="my-0">Total (USD)</h6>
+            </div>
+            <span class="text-body"><b>$20</b></span>
+          </li>
         </ul>
-    </footer>
+        <form class="card p-2">
+          <div class="input-group ">
+            <input type="text" class="form-control" placeholder="Promo code" />
+            <div class="input-group-append">
+              <button class="btn btn-dark" type="button">Redeem</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-muted text-center my-5">
+    <p>© 2017-2019 Company Name</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Privacy</a></li>
+      <li class="list-inline-item"><a href="#">Terms</a></li>
+      <li class="list-inline-item"><a href="#">Support</a></li>
+    </ul>
+  </footer>
 </body>
 
 </html>
